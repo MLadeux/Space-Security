@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /**text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;**/
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+background-color: #f5f5f5f5;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.color-acento{ color:blueviolet;}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("../media/Security4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#quienes-somos .container{
+    text-align: center;
+    padding: 90px 10px;
+}
+#nuestros-servicios{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-servicios .container{
+    padding: 5px;
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 25px 0px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/Security3.png");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/descarga.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/Proct.jpg")
+
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/cib.jpeg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 90px 10px;
+    
+}
+
+#caracteristicas li{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+.formulario {
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primario);
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    .formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+@media (min-width:480px) {
+    .campo {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .campo{
+        flex: 0 0 calc(50% - .5rem)
+    }
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+@media (min-width:480px) {
+    .campo label {
+        flex: 0 0 90px;
+    }
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+}
+@media (min-width: 768px) {
+    :is(.campo) :is( 
+        input[type="text"], 
+        input[type="text"],  
+        input[type="tel"],  
+        input[type="mail"] , 
+        textarea ) {
+        flex: 1;
+    }
+}
+
+.w-100{
+    flex: 0 0 100%;
+}
+.campo textarea {
+    height: 4rem;
+}
+
+.enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer p{
+    margin: 0;
+    text-align: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 32px;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media(min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #quienes-somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #quienes-somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienes-somos h2{
+        margin-top: 0px;
+    }
+
+    #quienes-somos .img-container{
+        background-image: url("../media/Security5.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 750px;
+        
+    }
+
+    #nuestros-servicios .servicios {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #nuestros-servicios h2{
+        font-size: 4em;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/Security3.png");
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/descarga.jpeg");
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/Proct.jpg")
+
+    }
+
+    #caracteristicas{
+        background-image: url("../media/la.png");
+        text-align: justify;
+        background-repeat: no-repeat;
+        background-size: 200px 420px;
+        background-position: calc(100vw - 500px) 80px;
+    }
+
+    #caracteristicas .container{
+        text-align: center;
+        padding: 90px 10px;
+    }
+    #caracteristicas h2{
+        text-align: center;
+    }
+    #caracteristicas ul{
+        margin-left: 100px;
+        text-align: left;
+    }
+    
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(30,30,30);
+        color: white;
+        height: 42vh;
+    }
+    #contacto h2{
+        font-size: 5em;
+    }
+
+    #contacto button{
+        font-size: 2em;
+    }
+}
+
+#final button{
+    font-size: 2em;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+footer .container{
+    justify-content: center;
+}
+
+@media(min-width: 1200px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800ox);
+    }
+}
